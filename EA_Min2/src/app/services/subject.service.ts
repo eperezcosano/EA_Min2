@@ -16,8 +16,8 @@ export class SubjectService {
     return this.http.get<Subject[]>(this.subjectUrl);
   }
 
-  getStudentsFromSubject(subject: string): Observable<Subject> {
-    return this.http.get<Subject>(this.subjectUrl + '/' + subject);
+  getStudentsFromSubject(subject: string): Observable<Subject[]> {
+    return this.http.get<Subject[]>(this.subjectUrl + '/' + subject);
   }
 
 }
