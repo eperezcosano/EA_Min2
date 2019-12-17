@@ -1,18 +1,26 @@
-<p>Estudiantes Telematica</p>
-<ul>
-  <li *ngFor="let student of studentsTel">
-    {{ student.name }}
-  </li>
-</ul>
-<p>Estudiantes Sistemas</p>
-<ul>
-  <li *ngFor="let student of studentsSys">
-    {{ student.name }}
-  </li>
-</ul>
-<p>Estudiantes Aeros</p>
-<ul>
-  <li *ngFor="let student of studentsAer">
-    {{ student.name }}
-  </li>
-</ul>
+<ion-list>
+  <ion-list-header>
+    Telematics Studients
+  </ion-list-header>
+  <ion-item *ngFor="let student of studentsTel">
+    <ion-label>
+      <h2>{{ student.name }}</h2>
+    </ion-label>
+  </ion-item>
+  <ion-list-header>
+    Aeros Studients
+  </ion-list-header>
+  <ion-item *ngFor="let student of studentsAer">
+    <ion-label>
+      <h2>{{ student.name }}</h2>
+    </ion-label>
+  </ion-item>
+  <ion-list-header>
+    Systems Studients
+  </ion-list-header>
+  <ion-item *ngFor="let student of studentsSys">
+    <ion-label>
+      <h2>{{ student.name }}</h2>
+    </ion-label>
+  </ion-item>
+</ion-list>
