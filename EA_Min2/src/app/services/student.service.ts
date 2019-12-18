@@ -24,4 +24,8 @@ export class StudentService {
     return this.http.get<Student[]>(this.studentUrl + '/aeros');
   }
 
+  getStudentByName(name: string): Observable<Student> {
+    return this.http.get<Student>(this.studentUrl + '/' + name);
+  }
+
 }

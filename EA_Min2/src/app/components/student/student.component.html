@@ -2,7 +2,7 @@
   <ion-list-header>
     Telematics Studients
   </ion-list-header>
-  <ion-item *ngFor="let student of studentsTel">
+  <ion-item *ngFor="let student of studentsTel" (click)="viewStudentInfo(student.name)">
     <ion-label>
       <h2>{{ student.name }}</h2>
     </ion-label>
@@ -10,7 +10,7 @@
   <ion-list-header>
     Aeros Studients
   </ion-list-header>
-  <ion-item *ngFor="let student of studentsAer">
+  <ion-item *ngFor="let student of studentsAer" (click)="viewStudentInfo(student.name)">
     <ion-label>
       <h2>{{ student.name }}</h2>
     </ion-label>
@@ -18,7 +18,7 @@
   <ion-list-header>
     Systems Studients
   </ion-list-header>
-  <ion-item *ngFor="let student of studentsSys">
+  <ion-item *ngFor="let student of studentsSys" (click)="viewStudentInfo(student.name)">
     <ion-label>
       <h2>{{ student.name }}</h2>
     </ion-label>
