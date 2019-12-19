@@ -12,7 +12,7 @@
   <ion-list-header>
     Students in {{subjectName}}
   </ion-list-header>
-  <ion-item *ngFor="let student of subject.students">
+  <ion-item *ngFor="let student of subject.students" (click)="viewStudentInfo(student.name)">
     <ion-label>
       <h2>{{ student.name }}</h2>
     </ion-label>
